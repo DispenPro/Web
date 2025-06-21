@@ -1,0 +1,30 @@
+# Redirects para SEO
+/dispensadores-oviedo /paginas/servicios/oviedo.html 301
+/dispensadores-gijon /paginas/servicios/gijon.html 301
+/dispensadores-aviles /paginas/servicios/aviles.html 301
+/catalogo /paginas/Dispenpro-catalogo.html 301
+/blog /paginas/blog/ 301
+
+# Redirects para páginas antigas o errores comunes
+/index.php / 301
+/home / 301
+/contacto / 301
+
+# Headers de seguridad
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com;
+
+# Cache headers para recursos estáticos
+/css/*
+  Cache-Control: public, max-age=31536000
+/js/*
+  Cache-Control: public, max-age=31536000
+/img/*
+  Cache-Control: public, max-age=31536000
+
+# 404 personalizada
+/* /404.html 404

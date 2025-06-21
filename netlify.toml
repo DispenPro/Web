@@ -1,0 +1,65 @@
+[build]
+publish = "."
+
+[build.environment]
+NODE_VERSION = "18"
+
+# Configuración de formularios
+[[forms]]
+name = "contacto-principal"
+
+[[forms]]
+name = "contacto-catalogo"
+
+[[forms]]
+name = "contacto-oviedo"
+
+[[forms]]
+name = "contacto-gijon"
+
+[[forms]]
+name = "contacto-aviles"
+
+[[forms]]
+name = "newsletter"
+
+# Headers globales
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers para archivos estáticos
+[[headers]]
+for = "/css/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/js/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/img/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects
+[[redirects]]
+from = "/dispensadores-oviedo"
+to = "/paginas/servicios/oviedo.html"
+status = 301
+
+[[redirects]]
+from = "/dispensadores-gijon"
+to = "/paginas/servicios/gijon.html"
+status = 301
+
+[[redirects]]
+from = "/catalogo"
+to = "/paginas/Dispenpro-catalogo.html"
+status = 301

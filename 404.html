@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - DispenPro Asturias</title>
+    <meta name="description" content="La página que buscas no existe. Encuentra nuestros servicios de instalación de dispensadores en Asturias.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .error-code {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #374151;
+        }
+        .error-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background 0.3s;
+        }
+        .error-link:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+<div class="error-container">
+    <div class="error-code">404</div>
+    <h1 class="error-message">¡Oops! Esta página no existe</h1>
+    <p>La página que buscas no se encuentra disponible. Pero podemos ayudarte a encontrar lo que necesitas.</p>
+
+    <div class="error-links">
+        <a href="/" class="error-link">
+            <i class="fas fa-home"></i> Ir al Inicio
+        </a>
+        <a href="/paginas/Dispenpro-catalogo.html" class="error-link">
+            <i class="fas fa-book"></i> Ver Catálogo
+        </a>
+        <a href="tel:+34603906984" class="error-link">
+            <i class="fas fa-phone"></i> Llamar Ahora
+        </a>
+    </div>
+
+    <div style="margin-top: 3rem;">
+        <h3>¿Necesitas ayuda inmediata?</h3>
+        <p><strong>Teléfono:</strong> 603 906 984</p>
+        <p><strong>Email:</strong> info@dispenproasturias.com</p>
+        <p><strong>Servicio:</strong> Todo el Principado de Asturias</p>
+    </div>
+</div>
+
+<script>
+    // Enviar evento a Google Analytics si está configurado
+    if (typeof gtag !== 'undefined') {
+        gtag('event', '404_error', {
+            'page_location': window.location.href,
+            'page_referrer': document.referrer
+        });
+    }
+</script>
+</body>
+</html>

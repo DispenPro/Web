@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Directorios permitidos
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /paginas/
+
+# Evitar indexación de archivos técnicos
+Disallow: /css/critical.css
+Disallow: /js/lazy-loading.js
+
+# Permitir archivos importantes para SEO
+Allow: /sitemap.xml
+
+# Sitemap
+Sitemap: https://www.dispenproasturias.com/sitemap.xml
+
+# Crawl-delay para ser amigable con el servidor
+Crawl-delay: 1

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog DispenPro Asturias - Consejos y Normativas sobre Dispensadores</title>
+    <meta name="description" content="Blog especializado en dispensadores profesionales, normativas APPCC, mantenimiento y consejos para establecimientos de hostelería en Asturias.">
+    <link rel="canonical" href="https://www.dispenproasturias.com/paginas/blog/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../img/icon.ico">
+
+    <!-- Fonts y CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Schema del Blog -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Blog DispenPro Asturias",
+            "description": "Consejos profesionales sobre dispensadores, normativas y mantenimiento para hostelería",
+            "url": "https://www.dispenproasturias.com/paginas/blog/",
+            "author": {
+                "@type": "Organization",
+                "name": "DispenPro Asturias"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "DispenPro Asturias",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.dispenproasturias.com/img/logo.jpg"
+                }
+            }
+        }
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: document.title,
+            page_location: window.location.href,
+            content_group1: 'DispenPro Asturias',
+            content_group2: 'Servicios Locales'
+        });
+
+        // Eventos personalizados
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href
+        });
+    </script>
+
+    <!-- Google Tag Manager (opcional) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head>
+<body>
+<!-- Header -->
+<header class="header-main" id="header">
+    <a href="../../index.html" class="header-logo">DispenPro Asturias</a>
+    <nav class="main-nav">
+        <a href="../../index.html" class="nav-link">Inicio</a>
+        <a href="../../index.html#servicios" class="nav-link">Servicios</a>
+        <a href="../Dispenpro-catalogo.html" class="nav-link">Catálogo</a>
+        <a href="index.html" class="nav-link" style="color: #3b82f6;">Blog</a>
+        <button class="nav-button" onclick="openModal()">Contactar</button>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+</header>
+
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs" style="padding: 1rem 2rem; background: #f8f9fa; margin-top: 80px;">
+    <a href="../../index.html">Inicio</a> > <span>Blog</span>
+</nav>
+
+<!-- Hero del Blog -->
+<section style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); padding: 4rem 2rem; color: white; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">Blog DispenPro Asturias</h1>
+        <p style="font-size: 1.25rem; opacity: 0.9;">Consejos profesionales, normativas y guías sobre dispensadores para hostelería</p>
+    </div>
+</section>
+
+<!-- Lista de Artículos -->
+<section style="padding: 4rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+
+            <!-- Artículo 1 -->
+            <article class="blog-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                <div style="height: 200px; background: linear-gradient(45deg, #3b82f6, #1d4ed8); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-clipboard-check" style="font-size: 3rem; color: white;"></i>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <span style="color: #3b82f6; font-size: 0.9rem; font-weight: 600;">NORMATIVAS • 5 min lectura</span>
+                    <h3 style="margin: 0.5rem 0 1rem; font-size: 1.25rem; font-family: 'Poppins', sans-serif;">
+                        <a href="normativa-appcc-dispensadores-asturias.html" style="color: #374151; text-decoration: none;">
+                            Normativa APPCC: Todo lo que necesitas saber sobre dispensadores en Asturias
+                        </a>
+                    </h3>
+                    <p style="color: #6b7280; line-height: 1.6; margin-bottom: 1rem;">
+                        Guía completa sobre el cumplimiento de la normativa APPCC para establecimientos de hostelería.
+                        Requisitos específicos, documentación necesaria y sanciones.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: #9ca3af; font-size: 0.9rem;">21 Jun 2025</span>
+                        <a href="normativa-appcc-dispensadores-asturias.html" style="color: #3b82f6; text-decoration: none; font-weight: 600;">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="blog-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background: linear-gradient(45deg, #10b981, #059669); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-tools" style="font-size: 3rem; color: white;"></i>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <span style="color: #10b981; font-size: 0.9rem; font-weight: 600;">MANTENIMIENTO • 7 min lectura</span>
+                    <h3 style="margin: 0.5rem 0 1rem; font-size: 1.25rem; font-family: 'Poppins', sans-serif;">
+                        <a href="mantenimiento-dispensadores-preventivo.html" style="color: #374151; text-decoration: none;">
+                            Mantenimiento preventivo: Cómo evitar averías en tus dispensadores
+                        </a>
+                    </h3>
+                    <p style="color: #6b7280; line-height: 1.6; margin-bottom: 1rem;">
+                        Calendario de mantenimiento, señales de advertencia y consejos prácticos para
+                        alargar la vida útil de tus dispensadores profesionales.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: #9ca3af; font-size: 0.9rem;">18 Jun 2025</span>
+                        <a href="mantenimiento-dispensadores-preventivo.html" style="color: #10b981; text-decoration: none; font-weight: 600;">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="blog-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background: linear-gradient(45deg, #f59e0b, #d97706); display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-lightbulb" style="font-size: 3rem; color: white;"></i>
+                </div>
+                <div style="padding: 1.5rem;">
+                    <span style="color: #f59e0b; font-size: 0.9rem; font-weight: 600;">CONSEJOS • 4 min lectura</span>
+                    <h3 style="margin: 0.5rem 0 1rem; font-size: 1.25rem; font-family: 'Poppins', sans-serif;">
+                        <a href="elegir-dispensador-correcto-establecimiento.html" style="color: #374151; text-decoration: none;">
+                            Cómo elegir el dispensador correcto para tu tipo de establecimiento
+                        </a>
+                    </h3>
+                    <p style="color: #6b7280; line-height: 1.6; margin-bottom: 1rem;">
+                        Guía práctica para seleccionar dispensadores según el tipo de negocio:
+                        bares, restaurantes, hoteles y sus necesidades específicas.
+                    </p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="color: #9ca3af; font-size: 0.9rem;">15 Jun 2025</span>
+                        <a href="elegir-dispensador-correcto-establecimiento.html" style="color: #f59e0b; text-decoration: none; font-weight: 600;">
+                            Leer más →
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section style="background: #f8f9fa; padding: 4rem 2rem;">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <h2 style="margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">Mantente Informado</h2>
+        <p style="color: #6b7280; margin-bottom: 2rem;">
+            Recibe consejos profesionales y actualizaciones sobre normativas directamente en tu email.
+        </p>
+        <form style="display: flex; gap: 1rem; max-width: 400px; margin: 0 auto;" netlify name="newsletter">
+            <input type="hidden" name="form-name" value="newsletter">
+            <input
+                    type="email"
+                    placeholder="tu@email.com"
+                    style="flex: 1; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.5rem;"
+                    required
+            >
+            <button
+                    type="submit"
+                    style="padding: 0.75rem 1.5rem; background: #3b82f6; color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-weight: 600;"
+            >
+                Suscribirse
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer simplificado -->
+<footer style="background: #374151; color: white; padding: 2rem; text-align: center;">
+    <p><strong>DispenPro Asturias</strong> - Blog profesional sobre dispensadores</p>
+    <p>📞 603 906 984 | 📧 info@dispenproasturias.com</p>
+    <a href="../../index.html" style="color: #60a5fa; text-decoration: none;">← Volver a la página principal</a>
+</footer>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

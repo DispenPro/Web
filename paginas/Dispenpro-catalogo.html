@@ -18,6 +18,88 @@
 
     <!-- Estilos unificados -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Añadir después del head existente: -->
+
+    <!-- Structured Data para Catálogo -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Catálogo de Dispensadores Profesionales",
+            "description": "Catálogo completo de dispensadores de papel y jabón para hostelería",
+            "url": "https://www.dispenproasturias.com/paginas/Dispenpro-catalogo.html",
+            "numberOfItems": "15",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "position": 1,
+                    "name": "Dispensador Aitana",
+                    "description": "Dosificador económico fabricado en ABS de alta resistencia",
+                    "category": "Dosificadores de Jabón",
+                    "brand": "DispenPro"
+                },
+                {
+                    "@type": "Product",
+                    "position": 2,
+                    "name": "Portarrollos Smart",
+                    "description": "Portarrollos inteligente con visor de carga y frontal abatible",
+                    "category": "Dispensadores de Papel",
+                    "brand": "DispenPro"
+                }
+            ]
+        }
+    </script>
+
+    <!-- Breadcrumbs Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": "https://www.dispenproasturias.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Catálogo",
+                    "item": "https://www.dispenproasturias.com/paginas/Dispenpro-catalogo.html"
+                }
+            ]
+        }
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: document.title,
+            page_location: window.location.href,
+            content_group1: 'DispenPro Asturias',
+            content_group2: 'Servicios Locales'
+        });
+
+        // Eventos personalizados
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: window.location.href
+        });
+    </script>
+
+    <!-- Google Tag Manager (opcional) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
 </head>
 <body>
 <!-- Header Principal (similar al de la página principal pero adaptado) -->
@@ -40,7 +122,18 @@
     </nav>
 
     <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+
+
 </header>
+
+<!-- Después del header, antes del container: -->
+<nav class="breadcrumbs" style="padding: 1rem 2rem; background: #f8f9fa;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <a href="../index.html" style="color: #3b82f6; text-decoration: none;">Inicio</a>
+        <span style="margin: 0 0.5rem; color: #6b7280;">></span>
+        <span style="color: #374151;">Catálogo de Productos</span>
+    </div>
+</nav>
 
 <!-- Menú Móvil -->
 <nav class="mobile-menu" id="mobileMenu">

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Dashboard - DispenPro Asturias</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .metric-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .metric-title { font-size: 1.2rem; margin-bottom: 10px; color: #333; }
+        .metric-value { font-size: 2rem; font-weight: bold; color: #3b82f6; }
+        .checklist { list-style: none; padding: 0; }
+        .checklist li { padding: 5px 0; }
+        .checklist .completed { color: #10b981; }
+        .checklist .pending { color: #f59e0b; }
+        .checklist .error { color: #ef4444; }
+    </style>
+</head>
+<body>
+<h1>SEO Dashboard - DispenPro Asturias</h1>
+
+<div class="dashboard">
+    <!-- Métricas Técnicas -->
+    <div class="metric-card">
+        <div class="metric-title">Páginas Indexadas</div>
+        <div class="metric-value" id="indexed-pages">-</div>
+        <p>Páginas en Google Search Console</p>
+    </div>
+
+    <!-- Keywords -->
+    <div class="metric-card">
+        <div class="metric-title">Keywords Posicionando</div>
+        <div class="metric-value" id="ranking-keywords">-</div>
+        <p>Keywords en Top 100</p>
+    </div>
+
+    <!-- Tráfico -->
+    <div class="metric-card">
+        <div class="metric-title">Tráfico Orgánico</div>
+        <div class="metric-value" id="organic-traffic">-</div>
+        <p>Sesiones mensuales</p>
+    </div>
+
+    <!-- Checklist SEO -->
+    <div class="metric-card">
+        <div class="metric-title">Checklist SEO</div>
+        <ul class="checklist">
+            <li class="completed">✓ Sitemap XML implementado</li>
+            <li class="completed">✓ Robots.txt optimizado</li>
+            <li class="completed">✓ Schema markup configurado</li>
+            <li class="completed">✓ Meta tags optimizados</li>
+            <li class="pending">⏳ Core Web Vitals optimizados</li>
+            <li class="completed">✓ Páginas por ciudad creadas</li>
+            <li class="pending">⏳ Blog implementado</li>
+            <li class="completed">✓ Google My Business configurado</li>
+        </ul>
+    </div>
+
+    <!-- Keywords Objetivo -->
+    <div class="metric-card">
+        <div class="metric-title">Keywords Objetivo</div>
+        <div style="font-size: 0.9rem;">
+            <strong>Principales:</strong><br>
+            • dispensadores Asturias<br>
+            • instalación dispensadores Oviedo<br>
+            • dispensadores jabón Gijón<br>
+            • mantenimiento dispensadores Avilés<br><br>
+
+            <strong>Long-tail:</strong><br>
+            • normativa APPCC dispensadores<br>
+            • dispensadores profesionales hostelería<br>
+            • reparación dispensadores 24h Asturias
+        </div>
+    </div>
+
+    <!-- Competitors -->
+    <div class="metric-card">
+        <div class="metric-title">Análisis Competencia</div>
+        <div style="font-size: 0.9rem;">
+            <strong>Principales competidores:</strong><br>
+            • Empresa Local 1<br>
+            • Empresa Local 2<br>
+            • Distribuidores Nacionales<br><br>
+
+            <strong>Ventajas:</strong><br>
+            • Cobertura específica Asturias<br>
+            • Especialización hostelería<br>
+            • Servicio 24h
+        </div>
+    </div>
+</div>
+
+<script>
+    // Simulación de datos - En producción conectar con APIs reales
+    document.getElementById('indexed-pages').textContent = '8';
+    document.getElementById('ranking-keywords').textContent = '45';
+    document.getElementById('organic-traffic').textContent = '1,250';
+
+    // Actualizar cada 5 minutos
+    setInterval(() => {
+        console.log('Actualizando métricas SEO...');
+    }, 300000);
+</script>
+</body>
+</html>

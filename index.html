@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DispenPro Asturias - Instalación Profesional de Dispensadores | Servicio en Oviedo, Gijón, Avilés</title>
+    <meta name="description" content="Servicio profesional de instalación y mantenimiento de dispensadores de papel y jabón para bares, restaurantes y hoteles en Oviedo, Gijón, Avilés, Langreo, Mieres y todo el Principado de Asturias. Cumplimiento normativo sanitario garantizado.">
+    <meta name="keywords" content="dispensadores papel Asturias, instalación dispensadores Oviedo, dispensadores jabón Gijón, equipamiento baños restaurantes Avilés, normativa hostelería Asturias, dispensadores profesionales Principado, mantenimiento dispensadores Langreo">
+    <meta name="author" content="DispenPro Asturias">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dispenproasturias.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dispenproasturias.com/">
+    <meta property="og:title" content="DispenPro Asturias - Instalación Profesional de Dispensadores">
+    <meta property="og:description" content="Servicio especializado en instalación de dispensadores para hostelería en todo el Principado de Asturias">
+    <meta property="og:image" content="https://www.dispenproasturias.com/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Datos Estructurados JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "DispenPro Asturias",
+        "description": "Servicio profesional de instalación y mantenimiento de dispensadores de papel y jabón para hostelería en el Principado de Asturias",
+        "url": "https://www.dispenproasturias.com",
+        "telephone": "+34-603-906-984",
+        "email": "info@dispenproasturias.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Asturias",
+            "addressCountry": "ES"
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Oviedo"},
+            {"@type": "City", "name": "Gijón"},
+            {"@type": "City", "name": "Avilés"},
+            {"@type": "City", "name": "Langreo"},
+            {"@type": "City", "name": "Mieres"},
+            {"@type": "City", "name": "Siero"},
+            {"@type": "City", "name": "Cangas de Onís"},
+            {"@type": "City", "name": "Llanes"}
+        ],
+        "serviceType": "Instalación y mantenimiento de dispensadores profesionales",
+        "priceRange": "€€",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "sameAs": [
+            "https://www.facebook.com/dispenproasturias",
+            "https://www.instagram.com/dispenproasturias",
+            "https://www.linkedin.com/company/dispenproasturias"
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="header-main" id="header">
+        <a href="#" class="header-logo">
+
+            DispenPro Asturias
+        </a>
+        
+        <nav class="main-nav">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+            <a href="#zonas" class="nav-link">Zonas</a>
+            <a href="#testimonios" class="nav-link">Testimonios</a>
+            <a href="#precios" class="nav-link">Precios</a>
+            <a href="paginas/Dispenpro-catalogo.html" class="nav-link">Catalogo</a>
+            <button class="nav-button" onclick="openModal()">
+                <i class="fas fa-phone"></i>
+                Contactar
+            </button>
+        </nav>
+        
+        <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    </header>
+
+    <!-- Menú Móvil -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="menu-close" onclick="toggleMobileMenu()">×</button>
+        <a href="#inicio" class="nav-link" onclick="toggleMobileMenu()">Inicio</a>
+        <a href="#servicios" class="nav-link" onclick="toggleMobileMenu()">Servicios</a>
+        <a href="#quienes-somos" class="nav-link" onclick="toggleMobileMenu()">Quiénes Somos</a>
+        <a href="#zonas" class="nav-link" onclick="toggleMobileMenu()">Zonas</a>
+        <a href="#testimonios" class="nav-link" onclick="toggleMobileMenu()">Testimonios</a>
+        <a href="#precios" class="nav-link" onclick="toggleMobileMenu()">Precios</a>
+        <a href="paginas/Dispenpro-catalogo.html" class="nav-link" onclick="toggleMobileMenu()">Catálogo</a>
+        <button class="nav-button" onclick="openModal(); toggleMobileMenu();">
+            <i class="fas fa-phone"></i>
+            Contactar
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <h1 class="hero-title animate-on-scroll">DispenPro Asturias</h1>
+        <p class="hero-subtitle animate-on-scroll">
+            Instalación Profesional de Dispensadores
+        </p>
+        <p class="hero-description animate-on-scroll">
+            Servicio especializado en instalación y mantenimiento de dispensadores de papel y jabón para bares, 
+            restaurantes y hoteles en todo el Principado de Asturias. Cumplimiento normativo sanitario garantizado.
+        </p>
+        
+        <div class="hero-badges animate-on-scroll">
+            <div class="badge">
+                <i class="fas fa-tools"></i>
+                Instalación Profesional
+            </div>
+            <div class="badge">
+                <i class="fas fa-clock"></i>
+                Servicio 24h
+            </div>
+            <div class="badge">
+                <i class="fas fa-map-marker-alt"></i>
+                Todo Asturias
+            </div>
+        </div>
+
+        <div class="hero-cta-container animate-on-scroll">
+            <a href="#servicios" class="hero-cta">
+                <i class="fas fa-info-circle"></i>
+                Conocer Servicios
+            </a>
+            <button class="hero-cta hero-cta-secondary" onclick="openModal()">
+                <i class="fas fa-phone"></i>
+                Solicitar Presupuesto
+            </button>
+        </div>
+
+        <div class="trust-section animate-on-scroll">
+            <p class="trust-text">Servicio profesional en:</p>
+            <p class="cities-list">
+                Oviedo, Gijón, Avilés, Langreo, Mieres, Siero, Cangas de Onís, Llanes, 
+                Villaviciosa, Ribadesella, Infiesto, Pola de Siero, Sama, La Felguera y todo el Principado
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title animate-on-scroll">Quiénes Somos</h2>
+            <p class="about-intro animate-on-scroll">
+                Somos DispenPro Asturias, especialistas en la instalación y mantenimiento de dispensadores 
+                profesionales para el sector hostelero en todo el Principado de Asturias.
+            </p>
+            
+            <div class="about-highlight animate-on-scroll">
+                <h3>
+                    <i class="fas fa-star"></i>
+                    Líderes en Asturias
+                </h3>
+                <p>
+                    Con más de 8 años de experiencia, nos hemos consolidado como la empresa de referencia 
+                    en instalación de dispensadores profesionales en el Principado de Asturias, 
+                    garantizando el cumplimiento de toda la normativa sanitaria vigente.
+                </p>
+            </div>
+
+            <div class="about-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Instalaciones Realizadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Años de Experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">78</span>
+                    <span class="stat-label">Concejos Cubiertos</span>
+                </div>
+            </div>
+
+            <div class="about-story animate-on-scroll">
+                <h3>
+                    <i class="fas fa-history"></i>
+                    Nuestra Historia
+                </h3>
+                <p>
+                    Fundada en Oviedo, DispenPro Asturias nació con la misión de proporcionar 
+                    soluciones profesionales de higiene para el sector hostelero asturiano. Desde nuestros inicios, 
+                    hemos trabajado incansablemente para convertirnos en el socio de confianza de bares, 
+                    restaurantes y hoteles en todo el Principado.
+                </p>
+                <br>
+                <p>
+                    Nuestra filosofía se basa en tres pilares fundamentales: <strong>calidad en el servicio</strong>, 
+                    <strong>cumplimiento normativo</strong> y <strong>atención personalizada</strong>. 
+                    Entendemos que cada establecimiento tiene necesidades únicas, por lo que adaptamos 
+                    nuestras soluciones a los requerimientos específicos de cada cliente.
+                </p>
+                <br>
+                <p>
+                    Hoy, con presencia en los 78 concejos del Principado de Asturias, continuamos 
+                    expandiendo nuestros servicios y mejorando nuestras soluciones para seguir siendo 
+                    la referencia en instalación de dispensadores profesionales en la región.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services-section">
+        <h2 class="section-title animate-on-scroll">Nuestros Servicios</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Soluciones completas para el cumplimiento normativo de tu establecimiento
+        </p>
+        
+        <div class="services-grid">
+            <div class="service-card animate-on-scroll">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Instalación Profesional</h3>
+                </div>
+                <p>Instalación completa de dispensadores de papel y jabón cumpliendo toda la normativa sanitaria vigente.</p>
+                <ul class="service-features">
+                    <li>Evaluación previa del establecimiento</li>
+                    <li>Instalación según normativa APPCC</li>
+                    <li>Certificado de cumplimiento normativo</li>
+                    <li>Garantía de instalación de 2 años</li>
+                    <li>Materiales de primera calidad</li>
+                </ul>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="service-title">Mantenimiento y Reparación</h3>
+                </div>
+                <p>Servicio técnico especializado para mantener tus dispensadores en perfecto estado de funcionamiento.</p>
+                <ul class="service-features">
+                    <li>Revisiones periódicas programadas</li>
+                    <li>Reparación de averías en 24h</li>
+                    <li>Sustitución de piezas defectuosas</li>
+                    <li>Limpieza y desinfección profesional</li>
+                    <li>Servicio de urgencias disponible</li>
+                </ul>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="service-title">Asesoramiento Normativo</h3>
+                </div>
+                <p>Te ayudamos a cumplir con toda la legislación sanitaria aplicable a tu establecimiento.</p>
+                <ul class="service-features">
+                    <li>Auditoría de cumplimiento normativo</li>
+                    <li>Documentación oficial requerida</li>
+                    <li>Formación del personal</li>
+                    <li>Actualizaciones normativas</li>
+                    <li>Soporte en inspecciones sanitarias</li>
+                </ul>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="service-title">Suministro de Consumibles</h3>
+                </div>
+                <p>Abastecimiento regular de papel y jabón para que nunca te falten los suministros necesarios.</p>
+                <ul class="service-features">
+                    <li>Papel higiénico profesional</li>
+                    <li>Toallas de papel de calidad</li>
+                    <li>Jabón líquido antibacteriano</li>
+                    <li>Gel hidroalcohólico certificado</li>
+                    <li>Entrega programada mensual</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Características -->
+    <section class="features-section">
+        <h2 class="section-title animate-on-scroll">¿Por Qué Elegirnos?</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Las ventajas que nos convierten en la mejor opción para tu establecimiento
+        </p>
+        
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Mantenimiento y Reparación</h3>
+                <p class="feature-description">
+                    Servicio de mantenimiento preventivo y correctivo. Reparación de averías, sustitución de piezas y actualización de equipos obsoletos para garantizar el funcionamiento óptimo.
+                </p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="feature-title">Servicio de Urgencias 24h</h3>
+                <p class="feature-description">
+                    Entendemos que una avería puede afectar gravemente a tu negocio. Por eso ofrecemos 
+                    servicio de reparación de urgencias las 24 horas, todos los días del año, 
+                    para que nunca tengas que cerrar por un problema con los dispensadores.
+                </p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3 class="feature-title">Cobertura Total en Asturias</h3>
+                <p class="feature-description">
+                    Damos servicio en los 78 concejos del Principado de Asturias. Desde Taramundi 
+                    hasta Ribadedeva, pasando por todas las ciudades principales: Oviedo, Gijón, 
+                    Avilés, Langreo, Mieres y muchas más.
+                </p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3 class="feature-title">Técnicos Especializados</h3>
+                <p class="feature-description">
+                    Nuestro equipo está formado por técnicos altamente cualificados con amplia experiencia 
+                    en el sector de la hostelería. Conocemos las necesidades específicas de bares, 
+                    restaurantes y hoteles en Asturias.
+                </p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <h3 class="feature-title">Presupuestos Sin Compromiso</h3>
+                <p class="feature-description">
+                    Realizamos presupuestos detallados y gratuitos, adaptados a las necesidades específicas 
+                    de tu establecimiento. Sin letra pequeña, sin sorpresas. Precios transparentes 
+                    y competitivos en todo el Principado.
+                </p>
+            </div>
+            
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3 class="feature-title">Mantenimiento Integral de Baños</h3>
+                <p class="feature-description">
+                    Servicio completo de mantenimiento de instalaciones sanitarias: sustitución de cisternas, grifería, pestillos, manillas, tapas de WC, espejos y accesorios. Renovación integral de espacios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Zonas de Servicio -->
+    <section id="zonas" class="coverage-section">
+        <h2 class="section-title animate-on-scroll">Zonas de Servicio</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Presencia en todo el Principado de Asturias - 78 concejos cubiertos
+        </p>
+        
+        <div class="coverage-grid">
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-city"></i> Área Central</h4>
+                <p>Oviedo, Siero, Noreña, Las Regueras, Ribera de Arriba, Santo Adriano</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-industry"></i> Área Industrial</h4>
+                <p>Gijón, Carreño, Corvera, Illas, Castrillón, Avilés, Gozón, Candamo</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-mountain"></i> Cuencas Mineras</h4>
+                <p>Langreo, San Martín del Rey Aurelio, Mieres, Morcín, Riosa, Lena</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-water"></i> Costa Oriental</h4>
+                <p>Llanes, Ribadedeva, Peñamellera Alta, Peñamellera Baja, Cabrales, Onís</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-tree"></i> Oriente Asturiano</h4>
+                <p>Cangas de Onís, Amieva, Ponga, Caso, Sobrescobio, Piloña, Parres</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-fish"></i> Costa Central</h4>
+                <p>Villaviciosa, Colunga, Caravia, Ribadesella, Bimenes, Nava</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-leaf"></i> Occidente</h4>
+                <p>Valdés, Navia, Coaña, Boal, Grandas de Salime, Pesoz, Illano</p>
+            </div>
+            
+            <div class="coverage-item animate-on-scroll">
+                <h4><i class="fas fa-mountain"></i> Eo-Navia</h4>
+                <p>Castropol, Vegadeo, Taramundi, San Tirso de Abres, Tapia de Casariego</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials-section">
+        <h2 class="section-title animate-on-scroll">Lo Que Dicen Nuestros Clientes</h2>
+        <p class="section-subtitle animate-on-scroll">
+            La satisfacción de nuestros clientes es nuestra mejor carta de presentación
+        </p>
+        
+        <div class="testimonial-card active">
+            <p class="testimonial-content">
+                "Llevamos trabajando con DispenPro desde hace 3 años y estamos encantados. El servicio es excepcional, 
+                siempre cumplen los plazos y nunca hemos tenido problemas en las inspecciones sanitarias. 
+                La tranquilidad que nos dan no tiene precio."
+            </p>
+            <div class="testimonial-author">María González</div>
+            <div class="testimonial-position">Propietaria Restaurante El Rincón - Oviedo</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <p class="testimonial-content">
+                "Cuando abrimos nuestro segundo local en Gijón, no dudamos en llamar a DispenPro. 
+                La instalación fue perfecta, rápida y con toda la documentación en regla. 
+                Su servicio de mantenimiento es impecable y siempre están disponibles cuando los necesitamos."
+            </p>
+            <div class="testimonial-author">Carlos Rodríguez</div>
+            <div class="testimonial-position">Gerente Cafetería Central - Gijón</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <p class="testimonial-content">
+                "En nuestro hotel de 50 habitaciones en Llanes, la higiene es fundamental. DispenPro nos instaló 
+                todos los dispensadores necesarios y desde entonces no hemos tenido ni una sola incidencia. 
+                Su equipo es muy profesional y conoce perfectamente la normativa del sector."
+            </p>
+            <div class="testimonial-author">Ana Martínez</div>
+            <div class="testimonial-position">Directora Hotel Costa Verde - Llanes</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <p class="testimonial-content">
+                "Como propietario de varios establecimientos en Asturias, puedo decir que DispenPro es la empresa 
+                más seria y profesional con la que he trabajado. Su servicio 24h nos ha salvado en más de una ocasión. 
+                Los recomiendo sin dudarlo."
+            </p>
+            <div class="testimonial-author">Roberto Fernández</div>
+            <div class="testimonial-position">Propietario Grupo Hostelero AsturGastro</div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Precios -->
+    <section id="precios" class="pricing-section">
+        <h2 class="section-title animate-on-scroll">Planes y Precios</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Soluciones adaptadas a todo tipo de establecimientos
+        </p>
+        
+        <div class="pricing-grid">
+            <div class="pricing-card animate-on-scroll">
+                <h3 class="plan-name">Plan Básico</h3>
+                <div class="plan-price">Desde 150€</div>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 1rem;">Perfecto para pequeños establecimientos</p>
+                <ul class="plan-features">
+                    <li>Instalación de 2-4 dispensadores</li>
+                    <li>Dispensadores de papel y jabón</li>
+                    <li>Certificado de cumplimiento normativo</li>
+                    
+                    <li>Mantenimiento básico incluido</li>
+                    <li>Ideal para cafeterías y bares pequeños</li>
+                </ul>
+                <button class="nav-button" style="width: 100%; margin-top: 1rem;" onclick="openModal()">
+                    Solicitar Presupuesto
+                </button>
+            </div>
+            
+            <div class="pricing-card featured animate-on-scroll">
+                <h3 class="plan-name">Plan Profesional</h3>
+                <div class="plan-price">Desde 350€</div>
+                <p style="text-align: center; margin-bottom: 1rem;">La opción más popular para restaurantes</p>
+                <ul class="plan-features">
+                    <li>Instalación de 5-10 dispensadores</li>
+                    <li>Dispensadores premium de alta calidad</li>
+                    <li>Incluye gel hidroalcohólico</li>
+                    <li>Certificado de cumplimiento normativo</li>
+                    
+                    
+                    <li>Suministro de consumibles con descuento</li>
+                </ul>
+                <button class="nav-button" style="width: 100%; margin-top: 1rem;" onclick="openModal()">
+                    ¡El Más Popular!
+                </button>
+            </div>
+            
+            <div class="pricing-card animate-on-scroll">
+                <h3 class="plan-name">Plan Premium</h3>
+                <div class="plan-price">Desde 750€</div>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 1rem;">Solución completa para hoteles</p>
+                <ul class="plan-features">
+                    <li>Instalación de 10+ dispensadores</li>
+                    <li>Dispensadores automáticos con sensor</li>
+                    <li>Sistema completo de higiene</li>
+                    
+                    <li>Servicio técnico dedicado</li>
+                    <li>Formación del personal incluida</li>
+                    <li>Suministro automático de consumibles</li>
+                </ul>
+                <button class="nav-button" style="width: 100%; margin-top: 1rem;" onclick="openModal()">
+                    Contactar Especialista
+                </button>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <p style="color: #6b7280; font-style: italic;">
+                * Precios orientativos. El presupuesto final dependerá de las características específicas de cada establecimiento.
+                
+            </p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <h2 class="section-title animate-on-scroll">Preguntas Frecuentes</h2>
+        <p class="section-subtitle animate-on-scroll">
+            Resolvemos las dudas más comunes sobre nuestros servicios
+        </p>
+        
+        <div class="faq-container">
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Qué normativa sanitaria debo cumplir en mi establecimiento?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Los establecimientos de hostelería en Asturias deben cumplir con el Real Decreto 3484/2000 
+                    y las normativas APPCC. Esto incluye la instalación obligatoria de dispensadores de papel 
+                    y jabón en todos los aseos, tanto de clientes como de personal. Nosotros nos encargamos 
+                    de que tu instalación cumpla con todos los requisitos legales.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Cuánto tiempo tarda la instalación de los dispensadores?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    La instalación típica en un establecimiento pequeño-mediano (2-6 dispensadores) 
+                    se completa en 2-3 horas. Para instalaciones más grandes como hoteles, 
+                    puede tomar entre 4-6 horas. Programamos la instalación en horarios que no interfieran 
+                    con la actividad de tu negocio, incluso fuera del horario comercial si es necesario.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Qué incluye el mantenimiento de los dispensadores?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Nuestro servicio de mantenimiento incluye: revisiones periódicas programadas, sustitución de piezas defectuosas, 
+                    reparación de averías, recarga de consumibles y verificación del cumplimiento normativo. 
+                    También ofrecemos servicio de urgencias 24h para reparaciones críticas.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Proporcionan la documentación oficial necesaria?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Sí, con cada instalación proporcionamos un certificado de cumplimiento normativo 
+                    que incluye: especificaciones técnicas de los dispensadores instalados, 
+                    declaración de conformidad con la normativa vigente, manual de uso y mantenimiento, 
+                    y protocolo de limpieza recomendado. Esta documentación es válida para 
+                    cualquier inspección sanitaria.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Trabajan en toda Asturias o solo en las ciudades principales?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Damos servicio en los 78 concejos del Principado de Asturias, desde Taramundi 
+                    hasta Ribadedeva. No importa si tu establecimiento está en Oviedo, en un pueblo 
+                    de la montaña o en la costa, llegamos a cualquier punto de Asturias. 
+                    Para zonas más alejadas, coordinamos las visitas para optimizar los desplazamientos.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Qué garantía ofrecen en sus instalaciones?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Ofrecemos garantía completa de instalación  
+                    Esta garantía cubre tanto los dispensadores como la mano de obra. 
+                    Además, todos nuestros equipos cuentan con la garantía del fabricante.
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    ¿Qué pasa si tengo una avería fuera del horario comercial?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    Disponemos de servicio de urgencias 24 horas, 365 días al año. Entendemos que una avería 
+                    en los dispensadores puede obligarte a cerrar el establecimiento, por lo que nuestro 
+                    equipo técnico está disponible para reparaciones urgentes en cualquier momento. 
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section">
+        <h2 class="cta-title animate-on-scroll">¿Listo para Renovar tus Aseos?</h2>
+        <p class="cta-description animate-on-scroll">
+            Solicita tu presupuesto gratuito y Renueva tu establecimiento. 
+            Más de 200 clientes en Asturias ya confían en nosotros.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button class="hero-cta animate-on-scroll" onclick="openModal()">
+                <i class="fas fa-calculator"></i>
+                Presupuesto Gratuito
+            </button>
+            <a href="tel:+34603906984" class="hero-cta hero-cta-secondary animate-on-scroll">
+                <i class="fas fa-phone"></i>
+                Llamar Ahora: 603 906 984
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-pump-soap"></i> DispenPro Asturias</h3>
+                <p>Especialistas en equipamiento profesional para colectividades. Más de 10 años de experiencia en el sector.</p>
+                <a href="https://www.facebook.com/profile.php?id=61575901412919" target="_blank" rel="noopener" aria-label="Facebook" style="margin-right: 0.75rem; color: #9ca3af; font-size: 1.5rem;">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/joham_dispenpro/" target="_blank" rel="noopener" aria-label="Instagram" style="margin-right: 0.75rem; color: #9ca3af; font-size: 1.5rem;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joham-j-v-2b020b364/" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: #9ca3af; font-size: 1.5rem;">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-pump-soap"></i> DispenPro Asturias</h3>
+                <p>• Hoteles y restauración<br>
+                    • Centros sanitarios<br>
+                    • Oficinas y empresas<br>
+                    • Centros educativos<br>
+                    • Instalaciones deportivas</p>
+
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-phone"></i> Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+34603906984">603 906 984</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@dispenproasturias.com">info@dispenproasturias.com</a></li>
+                    <li><i class="fas fa-clock"></i> Lun-Vie: 8:00-18:00</li>
+                    <li><i class="fas fa-exclamation-triangle"></i> Urgencias: 24h</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Zonas de Servicio</h3>
+                <ul>
+                    <li>Oviedo</li>
+                    <li>Gijón</li>
+                    <li>Avilés</li>
+                    <li>Cuencas mineras</li>
+                    <li>Costa oriental y occidental</li>
+                    <li>78 concejos del Principado</li>
+                </ul>
+            </div>
+            
+  
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 DispenPro Asturias. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="#politica-privacidad">Política de Privacidad</a> | 
+            
+  
+                <a href="#terminos-condiciones">Términos y Condiciones</a> | 
+                <a href="#cookies">Política de Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal de Contacto -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="contactModal">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <h3 style="margin-bottom: 1.5rem; color: #111827; font-family: 'Poppins', sans-serif;">
+            <i class="fas fa-calculator"></i>
+            Solicitar Presupuesto Gratuito
+        </h3>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre"><i class="fas fa-user"></i> Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellidos">
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono"><i class="fas fa-phone"></i> Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="603 906 984">
+            </div>
+            
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="establecimiento"><i class="fas fa-store"></i> Nombre del Establecimiento *</label>
+                <input type="text" id="establecimiento" name="establecimiento" required placeholder="Restaurante, Bar, Hotel...">
+            </div>
+            
+            <div class="form-group">
+                <label for="ubicacion"><i class="fas fa-map-marker-alt"></i> Ubicación *</label>
+                <select id="ubicacion" name="ubicacion" required>
+                    <option value="">Selecciona tu concejo</option>
+                    <option value="Oviedo">Oviedo</option>
+                    <option value="Gijón">Gijón</option>
+                    <option value="Avilés">Avilés</option>
+                    <option value="Langreo">Langreo</option>
+                    <option value="Mieres">Mieres</option>
+                    <option value="Siero">Siero</option>
+                    <option value="Llanes">Llanes</option>
+                    <option value="Cangas de Onís">Cangas de Onís</option>
+                    <option value="Villaviciosa">Villaviciosa</option>
+                    <option value="Otro">Otro concejo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="tipo_establecimiento"><i class="fas fa-building"></i> Tipo de Establecimiento *</label>
+                <select id="tipo_establecimiento" name="tipo_establecimiento" required>
+                    <option value="">Selecciona el tipo</option>
+                    <option value="Bar/Cafetería">Bar/Cafetería</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Pensión/Hostal">Pensión/Hostal</option>
+                    <option value="Pub/Discoteca">Pub/Discoteca</option>
+                    <option value="Sidrería">Sidrería</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="num_aseos"><i class="fas fa-restroom"></i> Número de Aseos</label>
+                <select id="num_aseos" name="num_aseos">
+                    <option value="">Selecciona</option>
+                    <option value="1">1 aseo</option>
+                    <option value="2">2 aseos</option>
+                    <option value="3-4">3-4 aseos</option>
+                    <option value="5-10">5-10 aseos</option>
+                    <option value="10+">Más de 10 aseos</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="servicio_solicitado"><i class="fas fa-tools"></i> Servicio Solicitado *</label>
+                <select id="servicio_solicitado" name="servicio_solicitado" required>
+                    <option value="">Selecciona el servicio</option>
+                    <option value="Instalación nueva">Instalación nueva</option>
+                    <option value="Mantenimiento">Mantenimiento</option>
+                    <option value="Reparación">Reparación</option>
+                    <option value="Asesoramiento normativo">Asesoramiento normativo</option>
+                    <option value="Presupuesto completo">Presupuesto completo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje"><i class="fas fa-comment"></i> Información Adicional</label>
+                <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos cualquier detalle adicional sobre tu establecimiento o necesidades específicas..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                    <input type="checkbox" required>
+                    Acepto la <a href="#politica-privacidad" style="color: #3b82f6;">política de privacidad</a> *
+                </label>
+            </div>
+            
+            <button type="submit" class="nav-button" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                <i class="fas fa-paper-plane"></i>
+                Solicitar Presupuesto Gratuito
+            </button>
+            
+            <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: #6b7280;">
+                <i class="fas fa-clock"></i>
+                Respuesta en menos de 24 horas
+            </p>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
